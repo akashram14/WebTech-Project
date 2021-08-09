@@ -1,0 +1,28 @@
+{
+  "name": "Discussion Forum App",
+  "short_name": "Forum app",
+  "icons": [{
+    "src": "favicon.ico",
+    "type": "image/x-icon",
+    "sizes": "72x72"
+  }, {
+    "src": "favicon.ico",
+    "type": "image/x-icon",
+    "sizes": "96x96"
+  }, {
+    "src": "favicon.ico",
+    "type": "image/x-icon",
+    "sizes": "144x144"
+  }, {
+    "src": "icons/logo192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }, {
+    "src": "icons/logo512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait"
+}
