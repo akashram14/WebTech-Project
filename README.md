@@ -1,19 +1,9 @@
 # MERN-Forum
 
-Fully responsive, multilingual, NodeJs forum app built using Mongoose, ExpressJs, React, Socket.IO, JWT.
-
-![Forum screenshot](/screenshot.png)
-
 ## Installation
-- Clone and install dependencies
-  - `git clone https://github.com/xrystalll/MERN-Forum.git`
-  - `cd MERN-Forum`
-  - `npm install`
+- Clone and npm install backend and frontend(/client)
 
-  - And install for client
-    - `cd client`
-    - `npm install`
-
+### Not needed as I've already set these values
 - Fill environment (rename file `.env.development` to `.env`)
   - `PORT` - Express server port
   - `BACKEND` - The address where located backend
@@ -26,7 +16,4 @@ Fully responsive, multilingual, NodeJs forum app built using Mongoose, ExpressJs
 ## Launch
   - Go to the client folder `cd client`
   - Build client production build with the command `npm run build` or run with the command `npm start`
-
   - Run backend with the command `npm start` or in development mode `npm run dev`
-
-  - Enjoy 🙌
