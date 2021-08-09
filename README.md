@@ -1,5 +1,5 @@
 # MERN-Forum
-
+I have made some changes from the original repo https://github.com/xrystalll/MERN-Forum
 ## Installation
 - Clone and npm install backend and frontend(/client)
 
