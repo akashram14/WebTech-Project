@@ -196,16 +196,16 @@ const Profile = ({ userName }) => {
                       </div>
                     ) : (
                       <div className="profile_head_actions">
-                        <LinkButton
+                        {/* <LinkButton
                           link={'/messages/' + userData.name}
                           className="hollow"
                           text={Strings.message[lang]}
-                        />
+                        /> */}
                       </div>
                     )}
                   </div>
 
-                  {user.role >= 2 && user.id !== userData._id ? (
+                  {user.role >= 3 && user.id !== userData._id ? (
                     <Dropdown>
                       {user.role === 3 && (
                         <>
@@ -215,7 +215,7 @@ const Profile = ({ userName }) => {
                           <div onClick={() => deleteUser(userData._id)} className="dropdown_item">{Strings.delete[lang]}</div>
                         </>
                       )}
-                      {user.role > userData.role && (
+                      {/* {user.role > userData.role && (
                         <>
                           <div onClick={() => onBan(userData._id)} className="dropdown_item">
                             {banned ? Strings.unbanUser[lang] : Strings.banUser[lang]}
@@ -224,13 +224,13 @@ const Profile = ({ userName }) => {
                             {Strings.authorizationsHistory[lang]}
                           </Link>
                         </>
-                      )}
+                      )} */}
                     </Dropdown>
-                  ) : user.role >= 2 ? (
+                  ) : user.role >= 3 ? (
                     <Dropdown>
-                      <Link to={'/user/' + user.name + '/auth/history'} className="dropdown_item">
+                      {/* <Link to={'/user/' + user.name + '/auth/history'} className="dropdown_item">
                         {Strings.authorizationsHistory[lang]}
-                      </Link>
+                      </Link> */}
                     </Dropdown>
                   ) : null}
                 </div>

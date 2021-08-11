@@ -76,11 +76,11 @@ const LeftMenu = ({ open, setMenuOpen }) => {
               <span className="nav_text">{Strings.allBoards[lang]}</span>
             </NavLink>
           </li>
-          <li className="nav_item">
+          {/* <li className="nav_item">
             <NavLink to="/uploads" onClick={() => setMenuOpen(false)}>
               <span className="nav_text">{Strings.filesUploads[lang]}</span>
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav_item">
             <NavLink to="/users" onClick={() => setMenuOpen(false)}>
               <span className="nav_text">{Strings.users[lang]}</span>

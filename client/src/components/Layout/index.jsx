@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
       <Header setMenuState={() => setMenuOpen(!menuOpen)} />
 
       <section className="container">
-        {/* <LeftMenu open={menuOpen} setMenuOpen={setMenuOpen} /> */}
+        <LeftMenu open={menuOpen} setMenuOpen={setMenuOpen} />
 
         <main className="content">
           {children}

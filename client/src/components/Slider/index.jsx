@@ -11,6 +11,7 @@ const ControlledSlider = ({ items, card: Card }) => {
   const [start, setStart] = useState(true)
   const [end, setEnd] = useState(false)
   const itemWidth = 122
+  items = items.slice(0, 4);
 
   const handleScroll = ({ target }) => {
     if (target.scrollLeft === 0) {
@@ -42,21 +43,23 @@ const ControlledSlider = ({ items, card: Card }) => {
         className="boards_slide_list"
         style={{ gridTemplateColumns: `repeat(${items.length}, minmax(${itemWidth}px, 1fr))` }}
       >
-        <div className={start ? 'boards_slide_nav prev hide' : 'boards_slide_nav prev'} onClick={() => scrollTo(-itemWidth)}>
+        {/* <div className={start ? 'boards_slide_nav prev hide' : 'boards_slide_nav prev'} onClick={() => scrollTo(-itemWidth)}>
           <div className="slide_nav_btn">
             <i className="bx bx-left-arrow-alt" />
           </div>
-        </div>
+        </div> */}
 
-        {items.map(item => (
-          <Card key={item._id} data={item} />
+        {items.map(i => (
+
+          <Card key={i._id} data={i} />
+
         ))}
 
-        <div className={end ? 'boards_slide_nav next hide' : 'boards_slide_nav next'} onClick={() => scrollTo(itemWidth)}>
+        {/* <div className={end ? 'boards_slide_nav next hide' : 'boards_slide_nav next'} onClick={() => scrollTo(itemWidth)}>
           <div className="slide_nav_btn">
             <i className="bx bx-right-arrow-alt" />
           </div>
-        </div>
+        </div> */}
       </ul>
     </div>
   )

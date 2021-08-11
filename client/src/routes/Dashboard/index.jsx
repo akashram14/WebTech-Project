@@ -94,12 +94,12 @@ const Dashboard = () => {
               {Strings.reports[lang]}
             </NavLink>
 
-            <NavLink to={path + '/bans'} className="admin__nav_item">
+            {/* <NavLink to={path + '/bans'} className="admin__nav_item">
               <i className="bx bx-block" />
               {Strings.bans[lang]}
-            </NavLink>
+            </NavLink> */}
 
-            {user.role === 3 && (
+            {/* {user.role === 3 && (
               <NavLink to={path + '/folders'} className="admin__nav_item">
                 <i className="bx bx-folder" />
                 {Strings.uploadsFolders[lang]}
@@ -112,12 +112,12 @@ const Dashboard = () => {
             >
               <i className="bx bx-file-blank" />
               {Strings.moderateFiles[lang]}
-            </NavLink>
+            </NavLink> */}
 
-            <NavLink to={path + '/searchauth'} className="admin__nav_item">
+            {/* <NavLink to={path + '/searchauth'} className="admin__nav_item">
               <i className="bx bx-search" />
               {Strings.authorizationsHistory[lang]}
-            </NavLink>
+            </NavLink> */}
           </div>
         </Route>
         <Route>
